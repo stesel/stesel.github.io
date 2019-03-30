@@ -19,7 +19,6 @@
 }
 
 .home .intro {
-  font-family: "Reem Kufi", sans-serif;
   font-size: 2em;
   font-weight: 600;
 }
@@ -30,12 +29,25 @@
   font-weight: 200;
 }
 
-.icons i {
-  font-size: 2.2em;
-  padding: 0.15em;
-  color: #4B5658;
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.icons a svg path{
+.icons a {
+  font-size: 2.2em;
+  margin: 0.15em;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+}
+
+.icons .path{
   fill: #4B5658;
 }

@@ -11,6 +11,6 @@
 
 @media only screen and (max-height: 600px) and (orientation: landscape) {
   .App {
-    font-size: calc(10px + 2.4vmin);
+    font-size: calc(10px + 3.2vmin);
   }
 }
