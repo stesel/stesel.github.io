@@ -1,10 +1,8 @@
 import * as React from "react";
+import { IconProps } from "../../types";
 
-export const LinkedinIcon: React.FunctionComponent<{
-    svgClassName: string;
-    pathClassName: string;
-}> = props => {
-    const {svgClassName, pathClassName} = props;
+export const LinkedInIcon: React.FunctionComponent<IconProps> = props => {
+    const { svgClassName, pathClassName } = props;
     return (
         <svg className={svgClassName} role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <title>LinkedIn</title>

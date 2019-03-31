@@ -1,9 +1,7 @@
 import * as React from "react";
+import { IconProps } from "../../types";
 
-export const MediumIcon: React.FunctionComponent<{
-    svgClassName: string;
-    pathClassName: string;
-}> = props => {
+export const MediumIcon: React.FunctionComponent<IconProps> = props => {
     const { svgClassName, pathClassName } = props;
     return (
         <svg className={svgClassName} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

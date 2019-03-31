@@ -1,0 +1,47 @@
+@keyframes ballJumping {
+  from {
+    transform: translateY(-1.5em);
+  }
+  to {
+    transform: translateY(1.5em);
+  }
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 1em;
+  overflow: hidden;
+}
+
+.loaderBall {
+  width: 0.8em;
+  height: 0.8em;
+  border-radius: 50%;
+  margin: 0.4em;
+  background-color: #4B5658;
+  transform: translateY(-1.5em);
+  animation: ballJumping 800ms infinite alternate ease;
+}
+
+.loaderBall1 {
+  animation-delay: 100ms;
+}
+
+.loaderBall2 {
+  animation-delay: 200ms;
+}
+
+.loaderBall3 {
+  animation-delay: 300ms;
+}
+
+.loaderBall4 {
+  animation-delay: 400ms;
+}
+
+.loaderBall5 {
+  animation-delay: 500ms;
+}

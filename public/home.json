@@ -1,0 +1,26 @@
+{
+  "intro": "Hello, I'm Leonid!",
+  "tagLine": "CODING | MUSIC | GAMING",
+  "socialIcons": [
+    {
+      "type": "GitHub",
+      "url": "https://github.com/stesel"
+    },
+    {
+      "type": "LinkedIn",
+      "url": "https://www.linkedin.com/in/leonid-trofymchuk-2a976460"
+    },
+    {
+      "type": "Twitter",
+      "url": "https://twitter.com/Stesel23"
+    },
+    {
+      "type": "Medium",
+      "url": "https://medium.com/@stesel23"
+    },
+    {
+      "type": "CodeSandbox",
+      "url": "https://codesandbox.io/u/stesel"
+    }
+  ]
+}

@@ -14,3 +14,17 @@
     font-size: calc(10px + 3.2vmin);
   }
 }
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.appearing {
+  opacity: 1;
+  animation: appear 300ms forwards linear;
+}

@@ -1,23 +1,26 @@
 import * as React from "react";
 import "./Home.css";
-import { GitHubIcon } from "../icons/GitHubIcon";
-import { LinkedinIcon } from "../icons/LinkedinIcon";
-import { TwitterIcon } from "../icons/TwitterIcon";
-import {MediumIcon} from "../icons/MediumIcon";
-import { CodesandboxIcon } from "../icons/CodesandboxIcon";
+import { DataUrl } from "../../consts/dataUrl";
+import { HomeData } from "../../types";
+import { SocialIcons } from "../icons/SocialIcons";
+import { withLoader } from "../loader/Loader";
 
-export const Home: React.FunctionComponent = () => {
+export interface HomeProps extends HomeData {}
+
+const Component: React.FunctionComponent<HomeProps> = props => {
+    const {
+        intro,
+        tagLine,
+        socialIcons,
+    } = props;
+
     return (
-        <div className="home">
-            <div className="intro">Hello, I'm Leonid!</div>
-            <div className="tagline">CODING | MUSIC | GAMING</div>
-            <div className="icons">
-                <a target="_blank" href="https://github.com/stesel"><GitHubIcon svgClassName="icon" pathClassName="path" /></a>
-                <a target="_blank" href="https://www.linkedin.com/in/leonid-trofymchuk-2a976460"><LinkedinIcon  svgClassName="icon" pathClassName="path" /></a>
-                <a target="_blank" href="https://twitter.com/Stesel23"><TwitterIcon svgClassName="icon" pathClassName="path" /></a>
-                <a target="_blank" href="https://medium.com/@stesel23"><MediumIcon svgClassName="icon" pathClassName="path" /></a>
-                <a target="_blank" href="https://codesandbox.io/u/stesel"><CodesandboxIcon svgClassName="icon" pathClassName="path" /></a>
-            </div>
+        <div className="home appearing">
+            <div className="homeIntro">{intro}</div>
+            <div className="homeTagLine">{tagLine}</div>
+            <SocialIcons icons={socialIcons} />
         </div>
     );
 };
+
+export const Home: React.FunctionComponent = withLoader<HomeProps>(DataUrl.Home)(Component);
