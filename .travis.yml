@@ -1,0 +1,14 @@
+language: node_js
+node_js: 11
+scripts:
+  - npm run lint && npm run test && npm run build
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  keep_history: false
+  local_dir: build
+  target_branch: master
+  on:
+    branch: develop

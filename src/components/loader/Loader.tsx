@@ -23,6 +23,6 @@ export const withLoader = <P extends {}>(url: DataUrl) => {
                 return <Loader />;
             }
             return <Component {...data} />;
-        }
-    }
+        };
+    };
 };

@@ -5,7 +5,7 @@ import { HomeData } from "../../types";
 import { SocialIcons } from "../icons/SocialIcons";
 import { withLoader } from "../loader/Loader";
 
-export interface HomeProps extends HomeData {}
+export type HomeProps = HomeData;
 
 const Component: React.FunctionComponent<HomeProps> = props => {
     const {
