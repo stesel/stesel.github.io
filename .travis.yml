@@ -9,6 +9,6 @@ deploy:
   github_token: $GITHUB_TOKEN
   keep_history: false
   local_dir: build
-  target_branch: master
+  target_branch: develop
   on:
-    branch: develop
+    branch: master
