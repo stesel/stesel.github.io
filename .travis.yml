@@ -2,7 +2,7 @@ language: node_js
 node_js: 11
 scripts:
   - npm run install
-  
+
 jobs:
   include:
     - stage: lint

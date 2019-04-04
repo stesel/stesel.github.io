@@ -1,7 +1,6 @@
 import { IconType } from "../consts/IconType";
 
 export interface IconProps {
-    title: string;
     svgClassName: string;
     pathClassName: string;
 }
