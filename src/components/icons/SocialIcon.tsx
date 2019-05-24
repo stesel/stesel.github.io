@@ -23,7 +23,12 @@ export const SocialIcon: React.FunctionComponent<SocialIconProps> = props => {
     const { type, url } = props;
     const Icon = withTooltip<IconProps & TooltipProps>(iconMap[type]!);
     return (
-        <a className="socialIconAnchor" target="_blank" href={url}>
+        <a
+            className="socialIconAnchor"
+            target="_blank"
+            rel="noopener noreferrer"
+            href={url}
+        >
             <Icon
                 svgClassName="socialIcon"
                 pathClassName="socialIconPath"
