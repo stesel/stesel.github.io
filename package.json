@@ -14,6 +14,7 @@
     "deploy": "gh-pages -d build -b master"
   },
   "dependencies": {
+    "es6-promise": "4.2.6",
     "react": "16.8.4",
     "react-dom": "16.8.4",
     "whatwg-fetch": "3.0.0"

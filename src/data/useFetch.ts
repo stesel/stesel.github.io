@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import "whatwg-fetch";
 import { DataUrl } from "../consts/dataUrl";
 
 export function useFetch<D extends {}>(url: DataUrl) {
