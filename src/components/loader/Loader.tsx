@@ -19,7 +19,6 @@ export const withLoader = <P extends {}>(url: DataUrl) => {
     return (Component: React.FunctionComponent<P>): React.FunctionComponent => {
         return () => {
             const data = useFetch<P>(url);
-            console.log("useFetch");
             if (!data) {
                 return <Loader />;
             }

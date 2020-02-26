@@ -17,8 +17,8 @@ export interface SocialIconsProps {
 export interface HomeData {
     intro: string;
     tagLine: string;
-    socialIcons: Array<{
+    socialIcons: {
         type: IconType;
         url: string;
-    }>;
+    }[];
 }
