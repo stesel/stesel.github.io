@@ -1,3 +1,3 @@
-# stesel.github.io [![Build Status](https://travis-ci.org/stesel/stesel.github.io.svg?branch=develop)](https://travis-ci.org/stesel/stesel.github.io)
+# stesel.github.io [![Netlify Status](https://api.netlify.com/api/v1/badges/9adbe7ce-0637-431d-ae54-d8f974199560/deploy-status)](https://app.netlify.com/sites/stesel/deploys)
 
-https://stesel.github.io
+https://stesel.netlify.com
