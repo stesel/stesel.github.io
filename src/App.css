@@ -1,30 +1,30 @@
 .App {
-  text-align: center;
-  font-size: calc(10px + 2vmin);
+    text-align: center;
+    font-size: calc(10px + 2vmin);
 }
 
 @media only screen and (max-width: 600px) and (orientation: portrait) {
-  .App {
-    font-size: calc(10px + 3.2vmin);
-  }
+    .App {
+        font-size: calc(10px + 3.2vmin);
+    }
 }
 
 @media only screen and (max-height: 600px) and (orientation: landscape) {
-  .App {
-    font-size: calc(10px + 3.2vmin);
-  }
+    .App {
+        font-size: calc(10px + 3.2vmin);
+    }
 }
 
 @keyframes appear {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .appearing {
-  opacity: 1;
-  animation: appear 300ms forwards linear;
+    opacity: 1;
+    animation: appear 300ms forwards linear;
 }
